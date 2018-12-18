@@ -390,7 +390,7 @@ func (m *Context) Render() (image.Image, error) {
 		img, image.Point{trans.pCenterX - int(m.width)/2, trans.pCenterY - int(m.height)/2},
 		draw.Src)
 
-	attribution := m.tileProvider.Attribution
+	/*attribution := m.tileProvider.Attribution
 	if m.overrideAttribution != nil {
 		attribution = *m.overrideAttribution
 	}
@@ -406,7 +406,7 @@ func (m *Context) Render() (image.Image, error) {
 	gc.DrawRectangle(0.0, float64(m.height)-boxHeight, float64(m.width), boxHeight)
 	gc.Fill()
 	gc.SetRGBA(1.0, 1.0, 1.0, 0.75)
-	gc.DrawString(attribution, 4.0, float64(m.height)-4.0)
+	gc.DrawString(attribution, 4.0, float64(m.height)-4.0)*/
 
 	return croppedImg, nil
 }
